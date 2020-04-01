@@ -1,0 +1,44 @@
+﻿body {
+    font-size: 12px;
+}
+#container {
+    width:606px;
+    float:left;
+}
+#querydiv {
+    width: 600px;
+    float: left;
+    margin-bottom:10px;
+}
+
+#formdiv {
+    width: 400px;
+    float: left;
+}
+
+#adddiv {
+    width: 200px;
+    float: left;
+    text-align:right;
+}
+
+#studiv {
+    width: 606px;
+    float: left;
+    border-bottom: 1px solid #808080;
+    text-align: center;
+}
+
+.stuList {
+    width: 606px;
+    float: left;
+    border-top: 1px solid #808080;
+    border-left: 1px solid #808080;
+}
+
+.stuItem {
+    width: 90px;
+    float: left;
+    padding: 5px;
+    border-right: 1px solid #808080;
+}

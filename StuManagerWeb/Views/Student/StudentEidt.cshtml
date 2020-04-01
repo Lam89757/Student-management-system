@@ -1,0 +1,37 @@
+﻿@model Models.Student
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>学员修改</title>
+    <style type="text/css">
+        li {
+            list-style: none;
+            padding: 8px;
+        }
+
+        input {
+            border: 1px solid #D4D0C8;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form method="post" action="/Student/Edit">
+            <ul>
+                <li>学员学号：<input type="text" readonly="readonly" name="StudentId" value="@Model.StudentId" /></li>
+                <li>学员姓名：<input type="text" name="StudentName" value="@Model.StudentName" /></li>
+                <li>学员性别：
+                    <input type="radio" name="Gender" checked='@Model.Gender.Equals("男")' value="男" />男
+                    <input type="radio" name="Gender" checked='@Model.Gender.Equals("女")' value="女" />女
+                </li>
+                <li>出生日期：<input type="text" name="Birthday" value="@Model.Birthday.ToShortDateString()" /> </li>
+                <li>身份证号：<input type="text" name="StudentIdNo" value="@Model.StudentIdNo " /></li>
+                <li>手机号码：<input type="text" name="PhoneNumber" value="@Model.PhoneNumber " /></li>
+                <li>家庭住址：<input type="text" name="StudentAddress" value="@Model.StudentAddress " /></li>
+                <li><input type="submit" value="提交修改" /></li>
+            </ul>
+        </form>
+    </div>
+</body>
+</html>

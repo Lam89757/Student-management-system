@@ -1,0 +1,28 @@
+﻿@model Models.Student
+
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>添加新学员</title>
+    <style type="text/css">
+        li {
+            list-style: none;
+            padding: 10px;
+        }
+    </style>
+</head>
+<html>
+<body>
+    <div>
+        <ul>
+            <li>学员学号：@Model.StudentId </li>
+            <li>学员姓名：@Model.StudentName </li>
+            <li>学员性别：@Model.Gender </li>
+            <li>出生日期：@Model.Birthday.ToShortDateString()  </li>
+            <li>身份证号：@Model.StudentIdNo </li>
+            <li>手机号码：@Model.PhoneNumber  </li>
+            <li>家庭住址：@Model.StudentAddress </li>
+        </ul>
+    </div>
+</body>
+</html>
